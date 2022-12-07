@@ -1,12 +1,19 @@
 {
   "name": "electron-solid-boilerplate",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Really simple electron + solidjs boilerplate.",
+  "author": {
+    "name": "Chao Tzu-Hsien",
+    "email": "danny900714@gmail.com",
+    "url": "https://github.com/ZhaoTzuHsien"
+  },
+  "homepage": "https://github.com/ZhaoTzuHsien/electron-solid-boilerplate",
   "main": "electron/dist/main/index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "preview": "electron .",
+    "package": "vite build && electron-builder"
   },
   "license": "MIT",
   "devDependencies": {

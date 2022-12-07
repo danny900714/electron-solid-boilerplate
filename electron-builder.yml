@@ -1,0 +1,45 @@
+appId: io.github.zhaotzuhsien.electron-solid-boilerplate
+productName: Electron Solid Boilerplate
+asar: true
+files:
+  - dist
+  - electron/dist
+
+# macOS
+mac:
+  target:
+    target: default
+    arch:
+      - arm64
+      - x64
+  type: distribution
+  hardenedRuntime: true
+  gatekeeperAssess: false
+dmg:
+  contents:
+    - x: 130
+      y: 220
+    - x: 410
+      y: 220
+      type: link
+      path: /Applications
+
+# Windows
+win:
+  target:
+    - nsis
+nsis:
+  oneClick: false
+  perMachine: true
+  allowToChangeInstallationDirectory: true
+
+# Linux
+linux:
+  target:
+    - snap
+    - deb
+    - rpm
+    - tar.gz
+
+directories:
+  output: release

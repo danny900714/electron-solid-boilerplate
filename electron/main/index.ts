@@ -1,7 +1,7 @@
 import { app, BrowserWindow } from 'electron';
 import { join } from 'path';
 
-const indexHtml = join(__dirname, '../../dist/index.html');
+const indexHtml = join(__dirname, '../../../dist/index.html');
 const preload = join(__dirname, '../preload/index.js');
 
 function createWindow() {
